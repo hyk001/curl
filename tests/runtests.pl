@@ -2467,6 +2467,7 @@ sub rundictserver {
         if($verbose) {
             logmsg "RUN: $srvrname server PID $dictpid port $port\n";
         }
+        last;
     }
 
     return ($dictpid, $pid2, $port);
